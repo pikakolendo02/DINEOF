@@ -13,7 +13,7 @@ F90C := gfortran
 F90FLAGS := -fopenmp
 
 LD := $(F90C)
-LDFLAGS := 
+LDFLAGS := -fopenmp
 
 # necessary for gfortran 4.1, but default since 4.2
 F90FLAGS += -frecord-marker=4
@@ -77,4 +77,4 @@ INCLUDES = -I$(NETCDF_INC)
 # All library link options
 #==========================================================================
 
-LIBRARIES = -fopenmp -L$(ARPACK_LIB) -larpack -llapack -lblas -L$(NETCDF_LIB) -lnetcdff -lnetcdf
+LIBRARIES = -L$(ARPACK_LIB) -larpack -llapack -lblas -L$(NETCDF_LIB) -lnetcdff -lnetcdf

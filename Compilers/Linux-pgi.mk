@@ -4,9 +4,9 @@
 
 
 F90C := pgf90
-F90FLAGS := 
+F90FLAGS := -mp
 LD := $(F90C)
-LDFLAGS := 
+LDFLAGS := -mp
 
 ifeq ($(FORMAT),big_endian)
   F90FLAGS += -byteswapio

@@ -6,9 +6,9 @@
 
 
 F90C := ifort
-F90FLAGS := 
+F90FLAGS := -openmp
 LD := $(F90C)
-LDFLAGS := 
+LDFLAGS := -openmp
 
 ifeq ($(FORMAT),big_endian)
   F90FLAGS += -convert big_endian

@@ -6,9 +6,9 @@
 
 
 F90C := g95
-F90FLAGS := 
+F90FLAGS :=  -fopenmp
 LD := $(F90C)
-LDFLAGS := 
+LDFLAGS :=  -fopenmp
 
 ifeq ($(FORMAT),big_endian)
   F90FLAGS += -fendian=big
