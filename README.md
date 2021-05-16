@@ -9,4 +9,6 @@ Or you can just download and run the bin file.
 
 Dependences: NetCDF, ARPACK
 
+Use environment variable OMP_NUM_THREADS to limit threads. Default is all available threads.
+
 See official site for more infomation.
